@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:contentDescription="@string/result_fire_image"
+        android:scaleType="centerCrop"
+        android:id="@+id/result_fire_image"
+        android:cropToPadding="true"
+        android:background="@color/white"
+        android:padding="1dp"
+        android:src="@drawable/fireapp"/>
+
+    <TextView
+        android:id="@+id/result_info"
+        android:text="@string/result_info"
+        android:layout_below="@id/result_fire_image"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        style="@style/TextViewStyle.SubInfo" />
+
+    <TextView
+        android:id="@+id/result_footprint"
+        android:textSize="30sp"
+        android:hint="@string/result_footprint"
+        android:layout_below="@id/result_info"
+        style="@style/TextViewStyle.SubInfo" />
+
+    <TextView
+        android:id="@+id/result_units"
+        android:layout_below="@id/result_footprint"
+        android:text="@string/result_units"
+        android:textSize="30sp"
+        style="@style/TextViewStyle.SubInfo" />
+
+    <Button
+        android:id="@+id/result_btn"
+        android:text="@string/result_btn"
+        android:layout_below="@id/result_units"
+        android:layout_marginTop="40sp"
+        style="@style/ButtonStyle.MainButton" />
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Change2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/change2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/change2_section_title"
+            style="@style/TextViewStyle.MainTitle"
+            android:textSize="28sp"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:id="@+id/change2_q6"
+            android:layout_below="@id/change2_title"
+            android:text="@string/change2_q6"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/change2_q6_petrol_mileage"
+            android:layout_below="@id/change2_q6"
+            android:text="@string/change2_q6_petrol_mileage_with_unit"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change2_a6_petrol_mileage"
+            android:layout_below="@id/change2_q6_petrol_mileage"
+            android:autofillHints="mileage of petrol car"
+            android:hint="@string/change2_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:textSize="20sp"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change2_q6_petrol_distance"
+            android:layout_below="@id/change2_a6_petrol_mileage"
+            android:text="@string/change2_q6_petrol_distance_with_unit"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change2_a6_petrol_distance"
+            android:layout_below="@id/change2_q6_petrol_distance"
+            android:autofillHints="distance driven"
+            android:hint="@string/change2_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:textSize="20sp"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change2_q6_diesel_mileage"
+            android:layout_below="@id/change2_a6_petrol_distance"
+            android:text="@string/change2_q6_diesel_mileage_with_unit"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change2_a6_diesel_mileage"
+            android:layout_below="@id/change2_q6_diesel_mileage"
+            android:autofillHints="mileage of diesel car"
+            android:hint="@string/change2_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:textSize="20sp"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change2_q6_diesel_distance"
+            android:layout_below="@id/change2_a6_diesel_mileage"
+            android:text="@string/change2_q6_diesel_distance_with_unit"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change2_a6_diesel_distance"
+            android:layout_below="@id/change2_q6_diesel_distance"
+            android:autofillHints="distance driven"
+            android:hint="@string/change2_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:textSize="20sp"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change2_q7"
+            android:layout_below="@id/change2_a6_diesel_distance"
+            android:text="@string/change2_q7"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change2_a7"
+            android:layout_below="@id/change2_q7"
+            android:autofillHints="flight distances"
+            android:hint="@string/change2_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="125dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:textSize="20sp"
+            android:padding="2dp" />
+
+        <Button
+            android:id="@+id/change2_btn"
+            android:text="@string/change2_btn_next"
+            style="@style/ButtonStyle.MainButton"
+            android:layout_below="@id/change2_a7"
+            android:layout_marginTop="40dp" />
+
+    </RelativeLayout>
+</ScrollView>

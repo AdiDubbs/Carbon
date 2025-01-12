@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Question3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activity_question3_tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Section 3"
+            android:textAlignment="center"
+            android:textColor="#F8DE7E"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_question3_tvTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_below="@id/activity_question3_tvTitle"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Public Transport"
+            android:textAlignment="center"
+            android:textColor="#F8DE7E"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_question3_Q8_Taxis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8. If you use taxis, then please enter the total number of kilometres travelled"
+            android:layout_below="@id/activity_question3_tvTitle2"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:textAlignment="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_taxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/activity_question3_Q8_Taxis">
+
+            <EditText
+                android:id="@+id/activity_question3_A8_Taxis_A"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question3_A8_Taxis_B"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:text="km"
+                android:fontFamily="@font/imprima"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question3_Q9_LocalTrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9. If you use local trains, then please enter the total number of kilometres travelled"
+            android:layout_below="@id/layout_taxi"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:textAlignment="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_localtrain"
+            android:layout_below="@id/activity_question3_Q9_LocalTrain"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/activity_question3_A9_LocalTrain_A"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question3_A9_LocalTrain_B"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:text="km"
+                android:fontFamily="@font/imprima"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question3_Q10_LongTrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10. If you use long-distance trains, then please enter the total number of kilometres travelled"
+            android:layout_below="@id/layout_localtrain"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:textAlignment="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_longtrain"
+            android:layout_below="@id/activity_question3_Q10_LongTrain"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/activity_question3_A10_LongTrain_A"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question3_A10_LongTrain_B"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:text="km"
+                android:fontFamily="@font/imprima"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question3_Q11_Bus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11. If you use buses, then please enter the total number of kilometres travelled"
+            android:layout_below="@id/layout_longtrain"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:textAlignment="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_bus"
+            android:layout_below="@id/activity_question3_Q11_Bus"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/activity_question3_A11_Bus_A"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question3_A11_Bus_B"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:text="km"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question3_Q12_Subways"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12. If you use subways, then please enter the total number of kilometres travelled"
+            android:layout_below="@id/layout_bus"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:textAlignment="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_subway"
+            android:layout_below="@id/activity_question3_Q12_Subways"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/activity_question3_A12_Subways_A"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question3_A12_Subways_B"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:text="km"
+                android:fontFamily="@font/imprima"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_question3_btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:layout_below="@id/layout_subway"
+            android:layout_marginTop="50sp"
+            android:layout_marginLeft="60sp"
+            android:layout_marginRight="60sp"
+            android:layout_marginBottom="30sp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

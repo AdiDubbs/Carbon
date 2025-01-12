@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FootprintHistory">
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:text="@string/history_title"
+        android:id="@+id/history_title"
+        style="@style/TextViewStyle.MainTitle" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/history_layout">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_footprint"
+            android:text="@string/history_footprint"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginStart="60sp"
+            android:layout_marginEnd="20sp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_time"
+            android:text="@string/history_time"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginRight="60sp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
+        android:id="@+id/history_list"
+        android:dividerHeight="2dp" />
+
+</LinearLayout>

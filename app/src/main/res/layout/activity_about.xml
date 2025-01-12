@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/version_title"
+        android:text="@string/version_title"
+        style="@style/TextViewStyle.MainTitle"/>
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:id="@+id/version_developer"
+        android:layout_below="@id/version_title"
+        android:text="@string/version_developer"
+        style="@style/TextViewStyle.SubInfo" />
+
+    <TextView
+        android:id="@+id/version_contact"
+        android:layout_below="@id/version_developer"
+        android:text="@string/version_contact"
+        style="@style/TextViewStyle.SubInfo" />
+
+    <TextView
+        android:id="@+id/version_designer"
+        android:layout_below="@id/version_contact"
+        android:text="@string/version_logo"
+        style="@style/TextViewStyle.SubInfo" />
+
+    <TextView
+        android:id="@+id/version_launch"
+        android:layout_below="@id/version_designer"
+        android:text="@string/version_launch"
+        style="@style/TextViewStyle.SubInfo" />
+
+    <TextView
+        android:id="@+id/version_relaunch"
+        android:layout_below="@id/version_launch"
+        android:text="@string/version_relaunch"
+        style="@style/TextViewStyle.SubInfo" />
+
+    <Button
+        android:id="@+id/version_btn"
+        android:layout_below="@id/version_relaunch"
+        android:text="@string/version_btn"
+        style="@style/ButtonStyle.MainButton" />
+
+</RelativeLayout>

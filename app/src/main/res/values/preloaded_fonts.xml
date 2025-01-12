@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta</item>
+        <item>@font/antic</item>
+        <item>@font/aref_ruqaa</item>
+        <item>@font/cambay</item>
+        <item>@font/comfortaa_light</item>
+        <item>@font/delius</item>
+        <item>@font/imprima</item>
+        <item>@font/news_cycle</item>
+        <item>@font/raleway</item>
+        <item>@font/roboto_flex</item>
+        <item>@font/rosario</item>
+        <item>@font/titillium_web_extralight</item>
+        <item>@font/voces</item>
+    </array>
+</resources>

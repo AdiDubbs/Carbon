@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Change4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/change4_title"
+            android:text="@string/change4_title"
+            android:textSize="28sp"
+            android:layout_marginTop="60dp"
+            style="@style/TextViewStyle.MainTitle" />
+
+        <TextView
+            android:id="@+id/change4_q9"
+            android:layout_below="@id/change4_title"
+            android:text="@string/change4_diet"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <Spinner
+            android:id="@+id/change4_diet_ans"
+            android:layout_below="@id/change4_q9"
+            android:padding="2sp"
+            android:layout_marginTop="25dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:background="@drawable/input_background"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/change4_q10"
+            android:layout_below="@id/change4_diet_ans"
+            android:text="@string/change4_q10"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/change4_food"
+            android:layout_below="@id/change4_q10"
+            android:text="@string/change4_food"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_food_ans"
+            android:layout_below="@id/change4_food"
+            android:autofillHints="food budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change4_medicine"
+            android:layout_below="@id/change4_food_ans"
+            android:text="@string/change4_medicine"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_medicine_ans"
+            android:layout_below="@id/change4_medicine"
+            android:autofillHints="medicine budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change4_clothes"
+            android:layout_below="@id/change4_medicine_ans"
+            android:text="@string/change4_clothes"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_clothes_ans"
+            android:layout_below="@id/change4_clothes"
+            android:autofillHints="clothes budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change4_books"
+            android:layout_below="@id/change4_clothes_ans"
+            android:text="@string/change4_books"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_books_ans"
+            android:layout_below="@id/change4_books"
+            android:autofillHints="books budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change4_tech"
+            android:layout_below="@id/change4_books_ans"
+            android:text="@string/change4_tech"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_tech_ans"
+            android:layout_below="@id/change4_tech"
+            android:autofillHints="tech budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+        <TextView
+            android:id="@+id/change4_gadget"
+            android:layout_below="@id/change4_tech_ans"
+            android:text="@string/change4_gadget"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_gadget_ans"
+            android:layout_below="@id/change4_gadget"
+            android:autofillHints="gadget budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change4_vehicle"
+            android:layout_below="@id/change4_gadget_ans"
+            android:text="@string/change4_vehicle"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_vehicle_ans"
+            android:layout_below="@id/change4_vehicle"
+            android:autofillHints="vehicle budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change4_furniture"
+            android:layout_below="@id/change4_vehicle_ans"
+            android:text="@string/change4_furniture"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_furniture_ans"
+            android:layout_below="@id/change4_furniture"
+            android:autofillHints="furniture budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change4_leisure"
+            android:layout_below="@id/change4_furniture_ans"
+            android:text="@string/change4_leisure"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_leisure_ans"
+            android:layout_below="@id/change4_leisure"
+            android:autofillHints="leisure budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change4_bills"
+            android:layout_below="@id/change4_leisure_ans"
+            android:text="@string/change4_bills"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_bills_ans"
+            android:layout_below="@id/change4_bills"
+            android:autofillHints="bills budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change4_education"
+            android:layout_below="@id/change4_bills_ans"
+            android:text="@string/change4_education"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_education_ans"
+            android:layout_below="@id/change4_education"
+            android:autofillHints="education budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change4_entertain"
+            android:layout_below="@id/change4_education_ans"
+            android:text="@string/change4_entertain"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/change4_entertain_ans"
+            android:layout_below="@id/change4_entertain"
+            android:autofillHints="entertainment budget"
+            android:hint="@string/change4_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <Button
+            android:id="@+id/change4_btn"
+            android:layout_below="@id/change4_entertain_ans"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="60dp"
+            android:text="@string/change4_btn"
+            style="@style/ButtonStyle.MainButton" />
+
+    </RelativeLayout>
+
+</ScrollView>

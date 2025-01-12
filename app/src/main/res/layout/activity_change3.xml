@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Change3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/change3_title"
+            android:text="@string/change3_title"
+            android:textSize="28sp"
+            android:layout_marginTop="60dp"
+            style="@style/TextViewStyle.MainTitle" />
+
+        <TextView
+            android:id="@+id/change3_q8"
+            android:layout_below="@id/change3_title"
+            android:text="@string/change3_q8"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="22sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/change3_cab"
+            android:layout_below="@id/change3_q8"
+            android:text="@string/change3_cab"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/change3_cab_count"
+            android:layout_below="@id/change3_cab"
+            android:autofillHints="distance in cabs"
+            android:hint="@string/change3_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change3_bus"
+            android:layout_below="@id/change3_cab_count"
+            android:text="@string/change3_bus"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/change3_bus_count"
+            android:layout_below="@id/change3_bus"
+            android:autofillHints="distance in buses"
+            android:hint="@string/change3_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change3_local_train"
+            android:layout_below="@id/change3_bus_count"
+            android:text="@string/change3_local_train"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/change3_local_train_count"
+            android:layout_below="@id/change3_local_train"
+            android:autofillHints="distance in local trains"
+            android:hint="@string/change3_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change3_intercity_train"
+            android:layout_below="@id/change3_local_train_count"
+            android:text="@string/change3_intercity_train"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/change3_intercity_train_count"
+            android:layout_below="@id/change3_intercity_train"
+            android:autofillHints="distance in intercity trains"
+            android:hint="@string/change3_hint"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <Button
+            android:id="@+id/change3_btn"
+            android:layout_below="@id/change3_intercity_train_count"
+            android:layout_marginTop="60dp"
+            android:text="@string/change1_btn"
+            style="@style/ButtonStyle.MainButton" />
+
+    </RelativeLayout>
+
+</ScrollView>

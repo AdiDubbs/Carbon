@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizInfo">
+
+    <ImageView
+        android:id="@+id/glacier_pic"
+        android:layout_width="400dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/melting_glacier"
+        android:contentDescription="@string/quiz_info_image" />
+
+    <TextView
+        android:id="@+id/quiz_info1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/glacier_pic"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="35dp"
+        android:fontFamily="@font/roboto_flex"
+        android:text="@string/quiz_info1"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/quiz_info_btn"
+        android:text="@string/begin_btn"
+        android:layout_below="@id/quiz_info1"
+        style="@style/ButtonStyle.MainButton" />
+
+</RelativeLayout>

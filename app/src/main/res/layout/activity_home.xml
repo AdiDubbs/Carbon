@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/home_title"
+            android:text="@string/home_title"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            style="@style/TextViewStyle.MainTitle" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="2dp"
+            android:background="#008CBA"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/home_title" />
+
+        <TextView
+            android:id="@+id/home_footprint1"
+            android:text="@string/home_footprint1"
+            android:layout_below="@id/divider1"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <TextView
+            android:id="@+id/home_footprint2"
+            android:hint="@string/home_footprint2"
+            android:layout_below="@id/home_footprint1"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <TextView
+            android:id="@+id/home_footprint3"
+            android:text="@string/home_footprint3"
+            android:layout_below="@id/home_footprint2"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="2dp"
+            android:background="#008CBA"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/home_footprint3" />
+
+        <TextView
+            android:id="@+id/home_setoff1"
+            android:text="@string/home_setoff1"
+            android:layout_below="@id/divider2"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <TextView
+            android:id="@+id/home_setoff2"
+            android:hint="@string/home_setoff2"
+            android:layout_below="@+id/home_setoff1"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <TextView
+            android:id="@+id/home_setoff3"
+            android:text="@string/home_setoff3"
+            android:layout_below="@+id/home_setoff2"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="2dp"
+            android:background="#008CBA"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/home_setoff3" />
+
+        <TextView
+            android:id="@+id/home_planted1"
+            android:text="@string/home_planted1"
+            android:layout_below="@id/divider3"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <TextView
+            android:id="@+id/home_planted2"
+            android:hint="@string/home_planted2"
+            android:layout_below="@id/home_planted1"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <TextView
+            android:id="@+id/home_planted3"
+            android:text="@string/home_planted3"
+            android:layout_below="@id/home_planted2"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="2dp"
+            android:background="#008CBA"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/home_planted3" />
+
+        <TextView
+            android:id="@+id/home_net1"
+            android:text="@string/home_net1"
+            android:layout_below="@id/divider4"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <TextView
+            android:id="@+id/home_net2"
+            android:layout_below="@id/home_net1"
+            android:hint="@string/home_net2"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <TextView
+            android:id="@+id/home_net3"
+            android:layout_below="@id/home_net2"
+            android:text="@string/home_net3"
+            style="@style/TextViewStyle.SubInfo" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="2dp"
+            android:background="#008CBA"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/home_net3" />
+
+    </RelativeLayout>
+
+</ScrollView>

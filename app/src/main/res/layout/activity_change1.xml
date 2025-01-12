@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Change1">
+
+        <TextView
+            android:id="@+id/change1_title"
+            android:text="@string/change1_title"
+            android:textSize="28sp"
+            android:layout_marginTop="60dp"
+            style="@style/TextViewStyle.MainTitle" />
+
+        <TextView
+            android:id="@+id/change1_q1"
+            android:layout_below="@id/change1_title"
+            android:text="@string/change1_q1"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/change1_a1"
+            android:layout_below="@id/change1_q1"
+            android:autofillHints="no. of people"
+            android:hint="@string/change1_a1"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change1_q2"
+            android:layout_below="@id/change1_a1"
+            android:text="@string/change1_q2"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/change1_a2"
+            android:layout_below="@id/change1_q2"
+            android:autofillHints="amount of electricity"
+            android:hint="@string/change1_a2"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change1_q3"
+            android:layout_below="@id/change1_a2"
+            android:text="@string/change1_q3"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/change1_a3"
+            android:layout_below="@id/change1_q3"
+            android:autofillHints="amount of natural gas"
+            android:hint="@string/change1_a3"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change1_q4"
+            android:layout_below="@id/change1_a3"
+            android:text="@string/change1_q4"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/change1_a4"
+            android:layout_below="@id/change1_q4"
+            android:autofillHints="amount of LPG"
+            android:hint="@string/change1_a4"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/change1_q5"
+            android:layout_below="@id/change1_a4"
+            android:text="@string/change1_q5"
+            style="@style/TextViewStyle.SubInfo"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/change1_a5"
+            android:layout_below="@id/change1_q5"
+            android:autofillHints="amount of LPG"
+            android:hint="@string/change1_a5"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextViewStyle.Input"
+            android:padding="2dp" />
+
+        <Button
+            android:id="@+id/change1_btn"
+            android:layout_below="@id/change1_a5"
+            android:layout_marginTop="40dp"
+            android:text="@string/change1_btn"
+            style="@style/ButtonStyle.MainButton" />
+
+
+    </RelativeLayout>
+</ScrollView>

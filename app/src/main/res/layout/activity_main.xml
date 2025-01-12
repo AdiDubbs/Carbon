@@ -1,0 +1,57 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:text="@string/welcome"
+        style="@style/TextViewStyle.MainTitle" />
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="375dp"
+        android:layout_height="225dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/main_title"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/industryapp"
+        android:contentDescription="@string/alt_text_2" />
+
+    <TextView
+        android:id="@+id/main_info0"
+        android:layout_below="@+id/main_image"
+        android:text="@string/info0"
+        android:layout_marginTop="50dp"
+        style="@style/TextViewStyle.MainInfo" />
+
+    <TextView
+        android:id="@+id/main_info1"
+        android:layout_below="@+id/main_info0"
+        android:text="@string/info1"
+        style="@style/TextViewStyle.MainInfo" />
+
+    <TextView
+        android:id="@+id/main_info2"
+        android:layout_below="@+id/main_info1"
+        android:text="@string/info2"
+        style="@style/TextViewStyle.MainInfo" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_below="@id/main_info2"
+        android:text="@string/next_btn"
+        style="@style/ButtonStyle.MainButton" />
+
+    </RelativeLayout>
+
+</ScrollView>

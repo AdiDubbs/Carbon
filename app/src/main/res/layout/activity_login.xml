@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:text="@string/login_title"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        style="@style/TextViewStyle.MainTitle" />
+
+    <TextView
+        android:id="@+id/login_subheading"
+        android:layout_below="@id/login_title"
+        android:text="@string/login_subheading"
+        style="@style/TextViewStyle.SubInfo"
+        android:layout_marginHorizontal="40dp" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_below="@id/login_subheading"
+        android:layout_marginTop="50dp"
+        android:autofillHints="enter your email"
+        android:hint="@string/login_email"
+        android:inputType="textEmailAddress"
+        style="@style/TextViewStyle.Input" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_below="@id/login_email"
+        android:autofillHints="enter your password"
+        android:hint="@string/login_password"
+        android:inputType="textPassword"
+        style="@style/TextViewStyle.Input" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_below="@id/login_password"
+        android:text="@string/login_btn"
+        style="@style/ButtonStyle.MainButton" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:text="@string/login_text"
+        android:layout_below="@id/login_btn"
+        style="@style/TextViewStyle.SubInfo"
+        android:textSize="18sp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginHorizontal="40dp" />
+
+    <Button
+        android:id="@+id/login_btn2"
+        android:layout_below="@id/login_text"
+        android:layout_marginTop="40dp"
+        android:text="@string/login_btn2"
+        style="@style/ButtonStyle.MainButton" />
+
+</RelativeLayout>

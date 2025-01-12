@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "930326816098",
+    "project_id": "carbon-fef16",
+    "storage_bucket": "carbon-fef16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930326816098:android:984e0bf0151df939d3b83b",
+        "android_client_info": {
+          "package_name": "com.example.carbon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930326816098-l3t08vvss9f5j9l36l52f4fovojvhn11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1wrlhbk98xPIJpBBE8qNFSxoV0Q4klgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930326816098-l3t08vvss9f5j9l36l52f4fovojvhn11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

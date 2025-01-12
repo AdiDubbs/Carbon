@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Question2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activity_question2_tvTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Section 2"
+            android:textAlignment="center"
+            android:textColor="#F8DE7E"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_question2_tvTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Transportation"
+            android:layout_below="@id/activity_question2_tvTitle1"
+            android:textAlignment="center"
+            android:textColor="#F8DE7E"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_question2_Q6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_question2_tvTitle2"
+            android:fontFamily="@font/imprima"
+            android:text="6. If you use a car, then please answer the following questions."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp" />
+
+        <TextView
+            android:id="@+id/activity_question2_Q6_Petrol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(a) Petrol"
+            android:layout_below="@id/activity_question2_Q6"
+            android:textSize="23sp"
+            android:fontFamily="@font/imprima"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="25sp" />
+
+        <TextView
+            android:id="@+id/activity_question2_Q6_Petrol_Mileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_question2_Q6_Petrol"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="(i) Mileage"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_Petrol_Mileage"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q6_Petrol_Mileage">
+
+            <EditText
+                android:id="@+id/activity_question2_A6_Petrol_Mileage1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A6_Petrol_Mileage2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/imprima"
+                android:text="km/litre"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question2_Q6_Petrol_km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_Petrol_Mileage"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="(ii) Total number of kilometres"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_Petrol_km"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q6_Petrol_km">
+
+            <EditText
+                android:id="@+id/activity_question2_A6_Petrol_km1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A6_Petrol_km2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/imprima"
+                android:text="km"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question2_Q6_Diesel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(b) Diesel"
+            android:layout_below="@id/layout_Petrol_km"
+            android:fontFamily="@font/imprima"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="30sp" />
+
+        <TextView
+            android:id="@+id/activity_question2_Q6_Diesel_Mileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_question2_Q6_Diesel"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="(i) Mileage"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_Diesel_Mileage"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q6_Diesel_Mileage">
+
+            <EditText
+                android:id="@+id/activity_question2_A6_Diesel_Mileage1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A6_Diesel_Mileage2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/imprima"
+                android:text="km/litre"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:padding="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question2_Q6_Diesel_km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_Diesel_Mileage"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="(ii) Total number of kilometres"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_Diesel_km"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q6_Diesel_km">
+
+            <EditText
+                android:id="@+id/activity_question2_A6_Diesel_km1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A6_Diesel_km2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:text="km"
+                android:fontFamily="@font/imprima"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:padding="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question2_Q6_CNG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(c) CNG"
+            android:fontFamily="@font/imprima"
+            android:layout_below="@id/layout_Diesel_km"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="30sp" />
+
+        <TextView
+            android:id="@+id/activity_question2_Q6_CNG_Mileage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_question2_Q6_CNG"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="(i) Mileage"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_CNG_Mileage"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q6_CNG_Mileage1">
+
+            <EditText
+                android:id="@+id/activity_question2_A6_CNG_Mileage1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A6_CNG_Mileage2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/imprima"
+                android:text="km/litre"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:padding="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question2_Q6_CNG_km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_CNG_Mileage"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="(ii) Total number of kilometres"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_CNG_km"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q6_CNG_km">
+
+            <EditText
+                android:id="@+id/activity_question2_A6_CNG_km1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A6_CNG_km2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/imprima"
+                android:text="km"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:padding="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question2_Q7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_CNG_km"
+            android:fontFamily="@font/imprima"
+            android:text="7. If you were on a flight, then please enter the distance of six flights"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <TextView
+            android:id="@+id/activity_question2_Q7_Flight1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(i) the first flight"
+            android:layout_below="@id/activity_question2_Q7"
+            android:textSize="23sp"
+            android:fontFamily="@font/imprima"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="30sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_Flight1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q7_Flight1">
+
+            <EditText
+                android:id="@+id/activity_question2_A7_Flight1_A"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A7_Flight1_B"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:text="km"
+                android:fontFamily="@font/imprima"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:padding="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question2_Q7_Flight2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(ii) the second flight"
+            android:fontFamily="@font/imprima"
+            android:layout_below="@id/layout_Flight1"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="30sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_Flight2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q7_Flight2">
+
+            <EditText
+                android:id="@+id/activity_question2_A7_Flight2_A"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A7_Flight2_B"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/imprima"
+                android:text="km"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:padding="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question2_Q7_Flight3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(iii) the third flight"
+            android:layout_below="@id/layout_Flight2"
+            android:textSize="23sp"
+            android:fontFamily="@font/imprima"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="30sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_Flight3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q7_Flight3">
+
+            <EditText
+                android:id="@+id/activity_question2_A7_Flight3_A"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A7_Flight3_B"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:text="km"
+                android:fontFamily="@font/imprima"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:padding="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question2_Q7_Flight4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(iv) the fourth flight"
+            android:fontFamily="@font/imprima"
+            android:layout_below="@id/layout_Flight3"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="30sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_Flight4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q7_Flight4">
+
+            <EditText
+                android:id="@+id/activity_question2_A7_Flight4_A"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A7_Flight4_B"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/imprima"
+                android:text="km"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:padding="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question2_Q7_Flight5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(v) the fifth flight"
+            android:layout_below="@id/layout_Flight4"
+            android:textSize="23sp"
+            android:fontFamily="@font/imprima"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="30sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_Flight5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question2_Q7_Flight5">
+
+            <EditText
+                android:id="@+id/activity_question2_A7_Flight5_A"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="110sp"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_question2_A7_Flight5_B"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/imprima"
+                android:text="km"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:padding="10sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_question2_btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:layout_below="@id/layout_Flight5"
+            android:layout_marginTop="50sp"
+            android:layout_marginLeft="100sp"
+            android:layout_marginRight="100sp"
+            android:layout_marginBottom="50sp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

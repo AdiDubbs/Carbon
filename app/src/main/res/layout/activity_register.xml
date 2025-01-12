@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:text="@string/register_title"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        style="@style/TextViewStyle.MainTitle" />
+
+    <TextView
+        android:id="@+id/register_subheading"
+        android:layout_below="@id/register_title"
+        android:text="@string/register_subheading"
+        style="@style/TextViewStyle.SubInfo"
+        android:layout_marginHorizontal="40dp" />
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_below="@id/register_subheading"
+        android:layout_marginTop="50dp"
+        android:autofillHints="enter your username"
+        android:hint="@string/register_name"
+        android:inputType="text"
+        style="@style/TextViewStyle.Input" />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_below="@id/register_name"
+        android:autofillHints="enter your phone number"
+        android:hint="@string/register_phone"
+        android:inputType="phone"
+        style="@style/TextViewStyle.Input" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_below="@id/register_phone"
+        android:autofillHints="enter your email"
+        android:hint="@string/register_email"
+        android:inputType="textEmailAddress"
+        style="@style/TextViewStyle.Input" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_below="@id/register_email"
+        android:autofillHints="enter your password"
+        android:hint="@string/register_password"
+        android:inputType="textPassword"
+        style="@style/TextViewStyle.Input" />
+
+    <EditText
+        android:id="@+id/register_password2"
+        android:layout_below="@id/register_password"
+        android:autofillHints="enter your password"
+        android:hint="@string/register_password2"
+        android:inputType="textPassword"
+        style="@style/TextViewStyle.Input" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_below="@id/register_password2"
+        android:text="@string/register_btn"
+        style="@style/ButtonStyle.MainButton" />
+
+    <TextView
+        android:id="@+id/register_text"
+        android:text="@string/register_text"
+        android:layout_below="@id/register_btn"
+        style="@style/TextViewStyle.SubInfo"
+        android:layout_marginBottom="0dp"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="40dp" />
+
+    <Button
+        android:id="@+id/register_btn2"
+        android:layout_below="@id/register_text"
+        android:layout_marginTop="40dp"
+        android:text="@string/register_btn2"
+        style="@style/ButtonStyle.MainButton" />
+
+</RelativeLayout>

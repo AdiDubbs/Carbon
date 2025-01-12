@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Question4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activity_question4_tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Section 4"
+            android:textAlignment="center"
+            android:textColor="#F8DE7E"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_question4_tvTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_below="@id/activity_question4_tvTitle"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Miscellanous"
+            android:textAlignment="center"
+            android:textColor="#F8DE7E"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_question4_Q13_Food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question4_tvTitle2"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="13. For food, please answer the following questions"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/activity_question4_Q13_Food_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(a) What kind of food do you eat ?"
+            android:layout_below="@id/activity_question4_Q13_Food"
+            android:textAlignment="center"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <Spinner
+            android:id="@+id/activity_question4_A13_Food_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question4_Q13_Food_A"
+            android:padding="3sp"
+            android:background="@color/white"
+            android:layout_marginLeft="60sp"
+            android:layout_marginRight="60sp"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/delius"
+            android:textAlignment="center"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:id="@+id/activity_question4_Q13_Food_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question4_A13_Food_A"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="(b) How much money do you spend per month on food and drinks ?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question4_Q13_Food_B"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A13_Food_B_1"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A13_Food_B_2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="30sp"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:gravity="start"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q14_Pharma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14. How much money do you spend per month on pharmaceuticals ?"
+            android:layout_below="@id/layout_food"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_pharma"
+            android:layout_below="@id/activity_question4_Q14_Pharma"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A14_Pharma_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A14_Pharma_B"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:gravity="start"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q15_Clothes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_pharma"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="15. How much money do you spend per month on clothes and shoes ?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_clothes"
+            android:layout_below="@id/activity_question4_Q15_Clothes"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A15_Clothes_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A15_Clothes_B"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:gravity="start"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q16_Books"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16. How much money do you spend per month on books, magazines, newspapers and other such products ?"
+            android:layout_below="@id/layout_clothes"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_books"
+            android:layout_below="@id/activity_question4_Q16_Books"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A16_Books_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A16_Books_B"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:gravity="start"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q17_IT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="17. How much money do you spend per month on computers and IT equipment ?"
+            android:layout_below="@id/layout_books"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_it"
+            android:layout_below="@id/activity_question4_Q17_IT"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A17_IT_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A17_IT_B"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:gravity="start"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q18_Devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="18. How much money do you spend per month on electronic devices such as TVs, phones, radios ?"
+            android:layout_below="@id/layout_it"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_devices"
+            android:layout_below="@id/activity_question4_Q18_Devices"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A18_Devices_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A18_Devices_B"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:gravity="start"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q19_Vehicles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="19. How much money do you spend per month on your vehicle/s (excluding fuel costs) ?"
+            android:layout_below="@id/layout_devices"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_vehicles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_question4_Q19_Vehicles"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A19_Vehicles_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:fontFamily="@font/imprima"
+                android:gravity="end"
+                android:text="Rs"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A19_Vehicles_B"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:gravity="start"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q20_Furniture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20. How much money do you spend per month on furniture ?"
+            android:layout_below="@id/layout_vehicles"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_furniture"
+            android:layout_below="@id/activity_question4_Q20_Furniture"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A20_Furniture_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A20_Furniture_B"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:gravity="start"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q21_Hotels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="21. How much money do you spend per month on hotels, restaurants and bars ?"
+            android:layout_below="@id/layout_furniture"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_hotels"
+            android:layout_below="@id/activity_question4_Q21_Hotels"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A21_Hotels_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A21_Hotels_B"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:gravity="start"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q22_Mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22. How much money do you spend per month on telephone/mobile fees ?"
+            android:layout_below="@id/layout_hotels"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_mobile"
+            android:layout_below="@id/activity_question4_Q22_Mobile"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A22_Mobile_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A22_Mobile_B"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:gravity="start"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q23_Education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="23. How much money do you spend per month on education fees ?"
+            android:layout_below="@id/layout_mobile"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_education"
+            android:layout_below="@id/activity_question4_Q23_Education"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A23_Education_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A23_Education_B"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:gravity="start"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_question4_Q24_Recreation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="24. How much money do you spend per month on recreational activities?"
+            android:layout_below="@id/layout_education"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/imprima"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_recreation"
+            android:layout_below="@id/activity_question4_Q24_Recreation"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_question4_A24_Recreation_A"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:gravity="end"
+                android:text="Rs"
+                android:fontFamily="@font/imprima"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/activity_question4_A24_Recreation_B"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:gravity="start"
+                android:background="@color/white"
+                android:fontFamily="@font/delius"
+                android:hint="Enter here"
+                android:padding="3sp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_question4_btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End the quiz"
+            android:textAllCaps="false"
+            android:textSize="23sp"
+            android:layout_below="@id/layout_recreation"
+            android:layout_marginTop="50sp"
+            android:layout_marginLeft="80sp"
+            android:layout_marginRight="80sp"
+            android:layout_marginBottom="30sp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

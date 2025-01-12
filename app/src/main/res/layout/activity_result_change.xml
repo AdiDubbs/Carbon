@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ResultChange">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="60sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:scaleType="centerCrop"
+        android:id="@+id/fire_image_2"
+        android:cropToPadding="true"
+        android:background="@color/white"
+        android:padding="1dp"
+        android:src="@drawable/fireapp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_change_info"
+        android:text="Your new carbon footprint is as follows :"
+        android:textColor="#F8DE7E"
+        android:layout_below="@id/fire_image_2"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
+        android:fontFamily="@font/imprima"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="50sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_change_footprint"
+        android:textSize="30sp"
+        android:hint="Here"
+        android:textColor="@color/white"
+        android:layout_below="@id/result_change_info"
+        android:gravity="center"
+        android:layout_marginTop="50sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"/>
+
+    <TextView
+        android:id="@+id/result_change_units"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_below="@id/result_change_footprint"
+        android:fontFamily="@font/imprima"
+        android:text="metric tons"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/result_change_btnCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return to Home"
+        android:fontFamily="@font/delius"
+        android:layout_marginRight="90sp"
+        android:layout_marginLeft="90sp"
+        android:layout_below="@id/result_change_units"
+        android:layout_marginTop="40sp"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:padding="5sp"/>
+
+</RelativeLayout>

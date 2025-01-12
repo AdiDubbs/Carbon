@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mnu_stats"
+        android:title="@string/statistics"
+        app:showAsAction="never"
+        android:orderInCategory="100"/>
+
+    <item
+        android:id="@+id/mnu_offset"
+        android:title="@string/offset"
+        app:showAsAction="never"
+        android:orderInCategory="200"/>
+
+    <item
+        android:id="@+id/mnu_change"
+        android:title="@string/change_your_footprint"
+        app:showAsAction="never"
+        android:orderInCategory="100"/>
+
+    <item
+        android:id="@+id/mnu_about_app"
+        android:title="@string/about_the_app"
+        app:showAsAction="never"
+        android:orderInCategory="200"/>
+
+    <item
+        android:id="@+id/mnu_logout"
+        android:title="@string/logout"
+        app:showAsAction="never"
+        android:orderInCategory="200"/>
+
+</menu>

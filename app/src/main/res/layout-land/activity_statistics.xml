@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Statistics">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activity_statistics_tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Statistics"
+            android:textSize="35dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginLeft="30sp"
+            android:textColor="#F8DE7E"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/activity_statistics_Fact1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginTop="30sp"
+            android:text="1. The amount of Carbon Dioxide in the atmosphere reached record levels in 2020, hitting 417 ppm in May. The last time CO2 levels exceeded 400 ppm was around four million years ago, during the Pliocene era."
+            android:textSize="23sp"
+            android:fontFamily="@font/imprima"
+            android:textAlignment="center"
+            android:layout_below="@id/activity_statistics_tvTitle"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/activity_statistics_Fact2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="2. The past decade was the hottest on record. In Europe it was the hottest year ever, while globally 2020 tied with 2016 as the warmest."
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:layout_below="@id/activity_statistics_Fact1"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/activity_statistics_Fact3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_statistics_Fact2"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="3. Since 1990 the world has lost 178 million hectares of forest (690,000 square miles) – an area the size of Libya."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/activity_statistics_Fact4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="4. Natural climate solutions such as restoring degraded forests could create as many as 39 jobs per million dollars spent — that's a job-creation rate more than six times higher than the oil and gas industry."
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:layout_below="@id/activity_statistics_Fact3"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/activity_statistics_Fact5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="5. Around 800 million people (11 percent of the world’s population) are currently vulnerable to climate change impacts 11 such as droughts, floods, heat waves, extreme weather events and sea-level rise. "
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:layout_below="@id/activity_statistics_Fact4"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/activity_statistics_Fact6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="30sp"
+            android:fontFamily="@font/imprima"
+            android:text="6. Average wildlife populations have dropped by 60 per cent in just over 40 years"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:layout_below="@id/activity_statistics_Fact5"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/activity_statistics_btnReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_statistics_Fact6"
+            android:text="Return to Home"
+            android:fontFamily="@font/delius"
+            android:textAllCaps="false"
+            android:textSize="23sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginLeft="80sp"
+            android:layout_marginRight="80sp"
+            android:layout_marginBottom="50sp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

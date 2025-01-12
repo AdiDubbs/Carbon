@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statistics">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/statistics_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics_title"
+            style="@style/TextViewStyle.MainTitle"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="30dp" />
+
+        <TextView
+            android:id="@+id/statistics_fact1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistics_title"
+            android:text="@string/statistics_fact1"
+            style="@style/TextViewStyle.MainInfo"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="45dp" />
+
+        <TextView
+            android:id="@+id/statistics_fact2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistics_fact1"
+            android:text="@string/statistics_fact2"
+            style="@style/TextViewStyle.MainInfo"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="45dp" />
+
+        <TextView
+            android:id="@+id/statistics_fact3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistics_fact2"
+            android:text="@string/statistics_fact3"
+            style="@style/TextViewStyle.MainInfo"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="45dp" />
+
+        <TextView
+            android:id="@+id/statistics_fact4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistics_fact3"
+            android:text="@string/statistics_fact4"
+            style="@style/TextViewStyle.MainInfo"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="45dp" />
+
+        <TextView
+            android:id="@+id/statistics_fact5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistics_fact4"
+            android:text="@string/statistics_fact5"
+            style="@style/TextViewStyle.MainInfo"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="45dp" />
+
+        <TextView
+            android:id="@+id/statistics_fact6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistics_fact5"
+            android:text="@string/statistics_fact6"
+            style="@style/TextViewStyle.MainInfo"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="45dp" />
+
+        <TextView
+            android:id="@+id/statistics_fact7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistics_fact6"
+            android:text="@string/statistics_fact7"
+            style="@style/TextViewStyle.MainInfo"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="45dp" />
+
+        <TextView
+            android:id="@+id/statistics_fact8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistics_fact7"
+            android:text="@string/statistics_fact8"
+            style="@style/TextViewStyle.MainInfo"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="45dp" />
+
+        <Button
+            android:id="@+id/statistics_return_btn"
+            android:layout_below="@id/statistics_fact8"
+            android:text="@string/statistics_return_btn"
+            style="@style/ButtonStyle.MainButton"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginBottom="50dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
